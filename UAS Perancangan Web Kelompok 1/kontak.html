@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brewly Coffee - Kontak</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-stone-100 text-stone-800 font-sans">
+
+  <!-- NAVBAR -->
+  <nav class="bg-amber-950 text-amber-100 px-6 py-4">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <a href="home.html" class="text-2xl font-bold text-amber-400">&#9749; Brewly</a>
+      <ul class="hidden md:flex gap-6 text-sm">
+        <li><a href="home.html"    class="nav-link">Home</a></li>
+        <li><a href="tentang.html" class="nav-link">Tentang</a></li>
+        <li><a href="produk.html"  class="nav-link">Produk</a></li>
+        <li><a href="galeri.html"  class="nav-link">Galeri</a></li>
+        <li><a href="tim.html"     class="nav-link">Tim</a></li>
+        <li><a href="blog.html"    class="nav-link">Blog</a></li>
+        <li><a href="faq.html"     class="nav-link">FAQ</a></li>
+        <li><a href="kontak.html"  class="nav-link active">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HEADER HALAMAN -->
+  <div class="page-header">
+    <h1>Hubungi Kami</h1>
+    <p>Kami siap membantu pertanyaan dan reservasi Anda</p>
+  </div>
+
+  <!-- KONTEN: INFO + FORM -->
+  <section class="max-w-5xl mx-auto py-16 px-6 md:flex gap-12">
+
+    <!-- Informasi kontak -->
+    <div class="md:w-1/2 mb-10 md:mb-0">
+      <h2 class="text-2xl font-bold mb-6">Informasi Kontak</h2>
+      <ul class="text-stone-600 space-y-4 text-sm">
+
+        <!-- Alamat disesuaikan dengan lokasi Google Maps: Selong, Lombok Timur -->
+        <li class="flex gap-3 items-start">
+          <span class="text-xl">&#128205;</span>
+          <span>Jl. Pahlawan No. 15, Selong, Lombok Timur, NTB 83611</span>
+        </li>
+        <li class="flex gap-3 items-start">
+          <span class="text-xl">&#128222;</span>
+          <span>(0376) 123-4567</span>
+        </li>
+        <li class="flex gap-3 items-start">
+          <span class="text-xl">&#9993;</span>
+          <span>hello@brewly.id</span>
+        </li>
+        <li class="flex gap-3 items-start">
+          <span class="text-xl">&#128336;</span>
+          <span>Setiap hari: 07.00 &ndash; 22.00 WITA</span>
+        </li>
+        <li class="flex gap-3 items-start">
+          <span class="text-xl">&#128241;</span>
+          <span>Instagram: @brewlycoffee</span>
+        </li>
+      </ul>
+
+      <!-- Google Maps embed: menampilkan lokasi Selong, Lombok Timur -->
+      <div class="mt-8 rounded-2xl overflow-hidden shadow">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15777.30799793144!2d116.52445831513512!3d-8.63158017260592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcc4eaf037bf1c3%3A0xc3cf966c5a071f00!2sSelong%2C%20East%20Lombok%20Regency%2C%20West%20Nusa%20Tenggara!5e0!3m2!1sen!2sid!4v1"
+          width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Form kontak -->
+    <form action="#" class="md:w-1/2 bg-white rounded-2xl shadow p-8 space-y-5">
+      <h2 class="text-2xl font-bold mb-2">Kirim Pesan</h2>
+
+      <div>
+        <label class="block text-sm font-medium mb-1" for="nama">Nama Lengkap</label>
+        <input id="nama" type="text" placeholder="Nama Anda"
+               class="w-full border border-stone-200 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-amber-400" />
+      </div>
+      <div>
+        <label class="block text-sm font-medium mb-1" for="email">Email</label>
+        <input id="email" type="email" placeholder="email@anda.com"
+               class="w-full border border-stone-200 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-amber-400" />
+      </div>
+      <div>
+        <label class="block text-sm font-medium mb-1" for="subjek">Subjek</label>
+        <input id="subjek" type="text" placeholder="Reservasi / Pertanyaan / Lainnya"
+               class="w-full border border-stone-200 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-amber-400" />
+      </div>
+      <div>
+        <label class="block text-sm font-medium mb-1" for="pesan">Pesan</label>
+        <textarea id="pesan" rows="4" placeholder="Tulis pesan Anda di sini..."
+                  class="w-full border border-stone-200 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-amber-400"></textarea>
+      </div>
+
+      <button type="submit"
+              class="w-full bg-amber-500 hover:bg-amber-600 text-stone-900 font-bold py-3 rounded-full transition">
+        Kirim Pesan &#9993;
+      </button>
+    </form>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-amber-950 text-stone-400 text-center py-5 text-sm">
+    &copy; 2025 Brewly Coffee &middot; Kelompok 1 &ndash; Informatika 4B
+  </footer>
+
+</body>
+</html>

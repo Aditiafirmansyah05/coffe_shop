@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brewly Coffee - Tim Kelompok</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-stone-100 text-stone-800 font-sans">
+
+  <!-- NAVBAR -->
+  <nav class="bg-amber-950 text-amber-100 px-6 py-4">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <a href="home.html" class="text-2xl font-bold text-amber-400">&#9749; Brewly</a>
+      <ul class="hidden md:flex gap-6 text-sm">
+        <li><a href="home.html"    class="nav-link">Home</a></li>
+        <li><a href="tentang.html" class="nav-link">Tentang</a></li>
+        <li><a href="produk.html"  class="nav-link">Produk</a></li>
+        <li><a href="galeri.html"  class="nav-link">Galeri</a></li>
+        <li><a href="tim.html"     class="nav-link active">Tim</a></li>
+        <li><a href="blog.html"    class="nav-link">Blog</a></li>
+        <li><a href="faq.html"     class="nav-link">FAQ</a></li>
+        <li><a href="kontak.html"  class="nav-link">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HEADER HALAMAN -->
+  <div class="page-header">
+    <h1>Tim Kami</h1>
+    <p>Kelompok 1 &middot; Kelas Informatika 4B</p>
+  </div>
+
+  <!-- DESKRIPSI TIM -->
+  <section class="max-w-3xl mx-auto text-center px-6 pt-16 pb-4">
+    <p class="text-amber-700 uppercase tracking-widest text-xs mb-3">Tentang Kelompok</p>
+    <h2 class="text-2xl font-bold mb-4">Dibalik Layar Brewly Coffee</h2>
+    <p class="text-stone-500 leading-relaxed">
+      Brewly Coffee lahir dari semangat dan kreativitas tiga mahasiswa Informatika 4B
+      yang percaya bahwa teknologi dan seni bisa berpadu indah &mdash; seperti kopi dan susu.
+      Website ini adalah wujud nyata dedikasi kami dalam mempelajari dunia perancangan web
+      yang kami tuangkan dengan sepenuh hati.
+    </p>
+  </section>
+
+  <!-- KARTU 3 ANGGOTA TIM -->
+  <section class="max-w-5xl mx-auto py-12 px-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- ANGGOTA 1: Aditia Firmansyah -->
+      <div class="bg-white rounded-2xl shadow text-center overflow-hidden card">
+
+        <!-- TEMPAT FOTO: Letakkan file "aditia.jpg" di folder yang sama dengan file ini -->
+        <!-- Jika foto belum ada, kotak abu-abu bergaris putus akan tampil sebagai pengganti -->
+        <div class="relative w-full h-56">
+          <img src="gambar/aditia.jpg"
+               alt="Foto Aditia Firmansyah"
+               class="w-full h-56 object-cover"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <!-- Placeholder muncul otomatis jika foto belum dimasukkan -->
+          <div class="absolute inset-0 bg-amber-50 border-2 border-dashed border-amber-300 hidden flex-col items-center justify-center"
+               style="display:none;">
+            <div class="text-4xl mb-2">&#128247;</div>
+            <p class="text-stone-500 text-sm font-semibold">Taruh Foto Di Sini</p>
+            <p class="text-amber-600 text-xs mt-1 font-bold">aditia.jpg</p>
+          </div>
+        </div>
+
+        <div class="p-6">
+          <h3 class="font-bold text-xl mb-2">Aditia Firmansyah</h3>
+          <span class="bg-amber-100 text-amber-800 text-xs px-3 py-1 rounded-full">Barista</span>
+          <p class="text-stone-500 text-sm mt-3">
+            Maestro di balik cangkir. Aditia adalah jiwa kreatif yang menghidupkan setiap menu
+            dengan teknik seduhan dan latte art yang memukau.
+          </p>
+        </div>
+      </div>
+
+      <!-- ANGGOTA 2: Fidyanul Kholis -->
+      <div class="bg-white rounded-2xl shadow text-center overflow-hidden card">
+
+        <!-- TEMPAT FOTO: Letakkan file "fidyanul.jpg" di folder yang sama -->
+        <div class="relative w-full h-56">
+          <img src="gambar/fidyanul.jpg"
+               alt="Foto Fidyanul Kholis"
+               class="w-full h-56 object-cover"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="absolute inset-0 bg-amber-50 border-2 border-dashed border-amber-300 hidden flex-col items-center justify-center"
+               style="display:none;">
+            <div class="text-4xl mb-2">&#128247;</div>
+            <p class="text-stone-500 text-sm font-semibold">Taruh Foto Di Sini</p>
+            <p class="text-amber-600 text-xs mt-1 font-bold">fidyanul.jpg</p>
+          </div>
+        </div>
+
+        <div class="p-6">
+          <h3 class="font-bold text-xl mb-2">Fidyanul Kholis</h3>
+          <span class="bg-amber-100 text-amber-800 text-xs px-3 py-1 rounded-full">Head Roaster</span>
+          <p class="text-stone-500 text-sm mt-3">
+            Sang penjaga cita rasa. Fidyanul memastikan setiap biji kopi melewati proses roasting
+            yang sempurna sebelum sampai ke tangan pelanggan.
+          </p>
+        </div>
+      </div>
+
+      <!-- ANGGOTA 3: Nur Fitria Akbar -->
+      <div class="bg-white rounded-2xl shadow text-center overflow-hidden card">
+
+        <!-- TEMPAT FOTO: Letakkan file "fitria.jpg" di folder yang sama -->
+        <div class="relative w-full h-56">
+          <img src="gambar/fitria.jpg"
+               alt="Foto Nur Fitria Akbar"
+               class="w-full h-56 object-cover"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="absolute inset-0 bg-amber-50 border-2 border-dashed border-amber-300 hidden flex-col items-center justify-center"
+               style="display:none;">
+            <div class="text-4xl mb-2">&#128247;</div>
+            <p class="text-stone-500 text-sm font-semibold">Taruh Foto Di Sini</p>
+            <p class="text-amber-600 text-xs mt-1 font-bold">fitria.jpg</p>
+          </div>
+        </div>
+
+        <div class="p-6">
+          <h3 class="font-bold text-xl mb-2">Nur Fitria Akbar</h3>
+          <span class="bg-amber-100 text-amber-800 text-xs px-3 py-1 rounded-full">Cafe Manager</span>
+          <p class="text-stone-500 text-sm mt-3">
+            Nahkoda operasional cafe. Fitria memastikan pengalaman setiap pelanggan terasa
+            mulus, hangat, dan selalu berkesan dari awal hingga akhir.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-amber-950 text-stone-400 text-center py-5 text-sm">
+    &copy; 2025 Brewly Coffee &middot; Kelompok 1 &ndash; Informatika 4B
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brewly Coffee - Produk</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-stone-100 text-stone-800 font-sans">
+
+  <!-- NAVBAR -->
+  <nav class="bg-amber-950 text-amber-100 px-6 py-4">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <a href="home.html" class="text-2xl font-bold text-amber-400">&#9749; Brewly</a>
+      <ul class="hidden md:flex gap-6 text-sm">
+        <li><a href="home.html"    class="nav-link">Home</a></li>
+        <li><a href="tentang.html" class="nav-link">Tentang</a></li>
+        <li><a href="produk.html"  class="nav-link active">Produk</a></li>
+        <li><a href="galeri.html"  class="nav-link">Galeri</a></li>
+        <li><a href="tim.html"     class="nav-link">Tim</a></li>
+        <li><a href="blog.html"    class="nav-link">Blog</a></li>
+        <li><a href="faq.html"     class="nav-link">FAQ</a></li>
+        <li><a href="kontak.html"  class="nav-link">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HEADER HALAMAN -->
+  <div class="page-header">
+    <h1>Menu Kami</h1>
+    <p>20 pilihan minuman terbaik untuk setiap selera</p>
+  </div>
+
+
+
+  <!-- DAFTAR 20 PRODUK -->
+  <!-- Grid 2 kolom di HP, 4 kolom di laptop -->
+  <section class="max-w-7xl mx-auto py-10 px-6">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+      <!-- 1. Espresso -->
+      <div class="bg-white rounded-2xl shadow overflow-hidden card">
+        <!-- Tempat foto: simpan file bernama menu-espresso.jpg di folder website -->
+        <div class="relative w-full h-40">
+          <img src="gambar/menu-espresso.jpg" alt="Espresso" class="w-full h-40 object-cover"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="w-full h-40 bg-amber-50 border-2 border-dashed border-amber-300 flex-col items-center justify-center" style="display:none;">
+            <div class="text-2xl">&#128247;</div>
+            <p class="text-amber-600 text-xs font-bold mt-1">menu-espresso.jpg</p>
+          </div>
+        </div>
+        <div class="p-4">
+          <h3 class="font-bold mb-1">Espresso</h3>
+          <p class="text-stone-500 text-xs mb-2">Shot kopi pekat dari biji Robusta pilihan.</p>
+          <span class="text-amber-600 font-bold text-sm">Rp 20.000</span>
+        </div>
+      </div>
+
+      <!-- 2. Cappuccino -->
+      <div class="bg-white rounded-2xl shadow overflow-hidden card">
+        <div class="relative w-full h-40">
+          <img src="gambar/menu-cappuccino.jpg" alt="Cappuccino" class="w-full h-40 object-cover"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="w-full h-40 bg-amber-50 border-2 border-dashed border-amber-300 flex-col items-center justify-center" style="display:none;">
+            <div class="text-2xl">&#128247;</div>
+            <p class="text-amber-600 text-xs font-bold mt-1">menu-cappuccino.jpg</p>
+          </div>
+        </div>
+        <div class="p-4">
+          <h3 class="font-bold mb-1">Cappuccino</h3>
+          <p class="text-stone-500 text-xs mb-2">Espresso dengan busa susu tebal yang creamy.</p>
+          <span class="text-amber-600 font-bold text-sm">Rp 28.000</span>
+        </div>
+      </div>
+
+      <!-- 3. Caramel Latte -->
+      <div class="bg-white rounded-2xl shadow overflow-hidden card">
+        <div class="relative w-full h-40">
+          <img src="gambar/menu-caramel-latte.jpg" alt="Caramel Latte" class="w-full h-40 object-cover"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="w-full h-40 bg-amber-50 border-2 border-dashed border-amber-300 flex-col items-center justify-center" style="display:none;">
+            <div class="text-2xl">&#128247;</div>
+            <p class="text-amber-600 text-xs font-bold mt-1">menu-caramel-latte.jpg</p>
+          </div>
+        </div>
+        <div class="p-4">
+          <h3 class="font-bold mb-1">Caramel Latte</h3>
+          <p class="text-stone-500 text-xs mb-2">Latte manis berpadu sirup karamel premium.</p>
+          <span class="text-amber-600 font-bold text-sm">Rp 32.000</span>
+        </div>
+      </div>
+
+      <!-- 4. Americano -->
+      <div class="bg-white rounded-2xl shadow overflow-hidden card">
+        <div class="relative w-full h-40">
+          <img src="gambar/menu-americano.jpg" alt="Americano" class="w-full h-40 object-cover"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="w-full h-40 bg-amber-50 border-2 border-dashed border-amber-300 flex-col items-center justify-center" style="display:none;">
+            <div class="text-2xl">&#128247;</div>
+            <p class="text-amber-600 text-xs font-bold mt-1">menu-americano.jpg</p>
+          </div>
+        </div>
+        <div class="p-4">
+          <h3 class="font-bold mb-1">Americano</h3>
+          <p class="text-stone-500 text-xs mb-2">Espresso diencerkan air panas, rasa bersih dan kuat.</p>
+          <span class="text-amber-600 font-bold text-sm">Rp 22.000</span>
+        </div>
+      </div>
+
+      <!-- 5. Matcha Latte -->
+      <div class="bg-white rounded-2xl shadow overflow-hidden card">
+        <div class="relative w-full h-40">
+          <img src="gambar/menu-matcha-latte.jpg" alt="Matcha Latte" class="w-full h-40 object-cover"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="w-full h-40 bg-amber-50 border-2 border-dashed border-amber-300 flex-col items-center justify-center" style="display:none;">
+            <div class="text-2xl">&#128247;</div>
+            <p class="text-amber-600 text-xs font-bold mt-1">menu-matcha-latte.jpg</p>
+          </div>
+        </div>
+        <div class="p-4">
+          <h3 class="font-bold mb-1">Matcha Latte</h3>
+          <p class="text-stone-500 text-xs mb-2">Matcha Jepang premium dengan susu segar lembut.</p>
+          <span class="text-amber-600 font-bold text-sm">Rp 33.000</span>
+        </div>
+      </div>
+
+      <!-- 6. Flat White -->
+      <div class="bg-white rounded-2xl shadow overflow-hidden card">
+        <div class="relative w-full h-40">
+          <img src="gambar/menu-flat-white.jpg" alt="Flat White" class="w-full h-40 object-cover"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="w-full h-40 bg-amber-50 border-2 border-dashed border-amber-300 flex-col items-center justify-center" style="display:none;">
+            <div class="text-2xl">&#128247;</div>
+            <p class="text-amber-600 text-xs font-bold mt-1">menu-flat-white.jpg</p>
+          </div>
+        </div>
+        <div class="p-4">
+          <h3 class="font-bold mb-1">Flat White</h3>
+          <p class="text-stone-500 text-xs mb-2">Ristretto kuat dengan microfoam susu yang mulus.</p>
+          <span class="text-amber-600 font-bold text-sm">Rp 30.000</span>
+        </div>
+      </div>
+
+      <!-- 7. Mocha -->
+      <div class="bg-white rounded-2xl shadow overflow-hidden card">
+        <div class="relative w-full h-40">
+          <img src="gambar/menu-mocha.jpg" alt="Mocha" class="w-full h-40 object-cover"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="w-full h-40 bg-amber-50 border-2 border-dashed border-amber-300 flex-col items-center justify-center" style="display:none;">
+            <div class="text-2xl">&#128247;</div>
+            <p class="text-amber-600 text-xs font-bold mt-1">menu-mocha.jpg</p>
+          </div>
+        </div>
+        <div class="p-4">
+          <h3 class="font-bold mb-1">Mocha</h3>
+          <p class="text-stone-500 text-xs mb-2">Perpaduan espresso, cokelat leleh, dan susu hangat.</p>
+          <span class="text-amber-600 font-bold text-sm">Rp 34.000</span>
+        </div>
+      </div>
+
+      <!-- 8. Pour Over V60 -->
+      <div class="bg-white rounded-2xl shadow overflow-hidden card">
+        <div class="relative w-full h-40">
+          <img src="gambar/menu-pour-over.jpg" alt="Pour Over V60" class="w-full h-40 object-cover"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="w-full h-40 bg-amber-50 border-2 border-dashed border-amber-300 flex-col items-center justify-center" style="display:none;">
+            <div class="text-2xl">&#128247;</div>
+            <p class="text-amber-600 text-xs font-bold mt-1">menu-pour-over.jpg</p>
+          </div>
+        </div>
+        <div class="p-4">
+          <h3 class="font-bold mb-1">Pour Over V60</h3>
+          <p class="text-stone-500 text-xs mb-2">Metode tuang manual, hasil bersih dan aromatik.</p>
+          <span class="text-amber-600 font-bold text-sm">Rp 35.000</span>
+        </div>
+      </div>
+
+      <!-- 9. Kopi Susu Aren -->
+      <div class="bg-white rounded-2xl shadow overflow-hidden card">
+        <div class="relative w-full h-40">
+          <img src="gambar/menu-kopi-susu-aren.jpg" alt="Kopi Susu Aren" class="w-full h-40 object-cover"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="w-full h-40 bg-amber-50 border-2 border-dashed border-amber-300 flex-col items-center justify-center" style="display:none;">
+            <div class="text-2xl">&#128247;</div>
+            <p class="text-amber-600 text-xs font-bold mt-1">menu-kopi-susu-aren.jpg</p>
+          </div>
+        </div>
+        <div class="p-4">
+          <h3 class="font-bold mb-1">Kopi Susu Aren</h3>
+          <p class="text-stone-500 text-xs mb-2">Kopi susu manis dengan gula aren asli Jawa.</p>
+          <span class="text-amber-600 font-bold text-sm">Rp 25.000</span>
+        </div>
+      </div>
+
+      <!-- 10. Cold Brew -->
+      <div class="bg-white rounded-2xl shadow overflow-hidden card">
+        <div class="relative w-full h-40">
+          <img src="gambar/menu-cold-brew.jpg" alt="Cold Brew" class="w-full h-40 object-cover"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="w-full h-40 bg-amber-50 border-2 border-dashed border-amber-300 flex-col items-center justify-center" style="display:none;">
+            <div class="text-2xl">&#128247;</div>
+            <p class="text-amber-600 text-xs font-bold mt-1">menu-cold-brew.jpg</p>
+          </div>
+        </div>
+        <div class="p-4">
+          <h3 class="font-bold mb-1">Cold Brew</h3>
+          <p class="text-stone-500 text-xs mb-2">Diseduh dingin 12 jam, halus dan menyegarkan.</p>
+          <span class="text-amber-600 font-bold text-sm">Rp 30.000</span>
+        </div>
+      </div>
+
+      <!-- 11. Macchiato -->
+      <div class="bg-white rounded-2xl shadow overflow-hidden card">
+        <div class="relative w-full h-40">
+          <img src="gambar/menu-macchiato.jpg" alt="Macchiato" class="w-full h-40 object-cover"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="w-full h-40 bg-amber-50 border-2 border-dashed border-amber-300 flex-col items-center justify-center" style="display:none;">
+            <div class="text-2xl">&#128247;</div>
+            <p class="text-amber-600 text-xs font-bold mt-1">menu-macchiato.jpg</p>
+          </div>
+        </div>
+        <div class="p-4">
+          <h3 class="font-bold mb-1">Macchiato</h3>
+          <p class="text-stone-500 text-xs mb-2">Espresso dengan sedikit busa susu segar di atasnya.</p>
+          <span class="text-amber-600 font-bold text-sm">Rp 26.000</span>
+        </div>
+      </div>
+
+      <!-- 12. Kopi Tubruk -->
+      <div class="bg-white rounded-2xl shadow overflow-hidden card">
+        <div class="relative w-full h-40">
+          <img src="gambar/menu-kopi-tubruk.jpg" alt="Kopi Tubruk" class="w-full h-40 object-cover"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="w-full h-40 bg-amber-50 border-2 border-dashed border-amber-300 flex-col items-center justify-center" style="display:none;">
+            <div class="text-2xl">&#128247;</div>
+            <p class="text-amber-600 text-xs font-bold mt-1">menu-kopi-tubruk.jpg</p>
+          </div>
+        </div>
+        <div class="p-4">
+          <h3 class="font-bold mb-1">Kopi Tubruk</h3>
+          <p class="text-stone-500 text-xs mb-2">Kopi tradisional Indonesia yang kental dan legit.</p>
+          <span class="text-amber-600 font-bold text-sm">Rp 15.000</span>
+        </div>
+      </div>
+
+      <!-- 13. French Press -->
+      <div class="bg-white rounded-2xl shadow overflow-hidden card">
+        <div class="relative w-full h-40">
+          <img src="gambar/menu-french-press.jpg" alt="French Press" class="w-full h-40 object-cover"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="w-full h-40 bg-amber-50 border-2 border-dashed border-amber-300 flex-col items-center justify-center" style="display:none;">
+            <div class="text-2xl">&#128247;</div>
+            <p class="text-amber-600 text-xs font-bold mt-1">menu-french-press.jpg</p>
+          </div>
+        </div>
+        <div class="p-4">
+          <h3 class="font-bold mb-1">French Press</h3>
+          <p class="text-stone-500 text-xs mb-2">Kopi bertubuh penuh dengan proses press 4 menit.</p>
+          <span class="text-amber-600 font-bold text-sm">Rp 32.000</span>
+        </div>
+      </div>
+
+      <!-- 14. Affogato -->
+      <div class="bg-white rounded-2xl shadow overflow-hidden card">
+        <div class="relative w-full h-40">
+          <img src="gambar/menu-affogato.jpg" alt="Affogato" class="w-full h-40 object-cover"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="w-full h-40 bg-amber-50 border-2 border-dashed border-amber-300 flex-col items-center justify-center" style="display:none;">
+            <div class="text-2xl">&#128247;</div>
+            <p class="text-amber-600 text-xs font-bold mt-1">menu-affogato.jpg</p>
+          </div>
+        </div>
+        <div class="p-4">
+          <h3 class="font-bold mb-1">Affogato</h3>
+          <p class="text-stone-500 text-xs mb-2">Espresso panas dituang di atas es krim vanila.</p>
+          <span class="text-amber-600 font-bold text-sm">Rp 38.000</span>
+        </div>
+      </div>
+
+      <!-- 15. Dalgona Coffee -->
+      <div class="bg-white rounded-2xl shadow overflow-hidden card">
+        <div class="relative w-full h-40">
+          <img src="gambar/menu-dalgona.jpg" alt="Dalgona Coffee" class="w-full h-40 object-cover"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="w-full h-40 bg-amber-50 border-2 border-dashed border-amber-300 flex-col items-center justify-center" style="display:none;">
+            <div class="text-2xl">&#128247;</div>
+            <p class="text-amber-600 text-xs font-bold mt-1">menu-dalgona.jpg</p>
+          </div>
+        </div>
+        <div class="p-4">
+          <h3 class="font-bold mb-1">Dalgona Coffee</h3>
+          <p class="text-stone-500 text-xs mb-2">Kopi kocok berbusa tebal di atas susu dingin.</p>
+          <span class="text-amber-600 font-bold text-sm">Rp 28.000</span>
+        </div>
+      </div>
+
+      <!-- 16. Es Kopi Susu -->
+      <div class="bg-white rounded-2xl shadow overflow-hidden card">
+        <div class="relative w-full h-40">
+          <img src="gambar/menu-es-kopi-susu.jpg" alt="Es Kopi Susu" class="w-full h-40 object-cover"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="w-full h-40 bg-amber-50 border-2 border-dashed border-amber-300 flex-col items-center justify-center" style="display:none;">
+            <div class="text-2xl">&#128247;</div>
+            <p class="text-amber-600 text-xs font-bold mt-1">menu-es-kopi-susu.jpg</p>
+          </div>
+        </div>
+        <div class="p-4">
+          <h3 class="font-bold mb-1">Es Kopi Susu</h3>
+          <p class="text-stone-500 text-xs mb-2">Kopi susu segar dengan es batu yang menyegarkan.</p>
+          <span class="text-amber-600 font-bold text-sm">Rp 22.000</span>
+        </div>
+      </div>
+
+      <!-- 17. Ristretto -->
+      <div class="bg-white rounded-2xl shadow overflow-hidden card">
+        <div class="relative w-full h-40">
+          <img src="gambar/menu-ristretto.jpg" alt="Ristretto" class="w-full h-40 object-cover"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="w-full h-40 bg-amber-50 border-2 border-dashed border-amber-300 flex-col items-center justify-center" style="display:none;">
+            <div class="text-2xl">&#128247;</div>
+            <p class="text-amber-600 text-xs font-bold mt-1">menu-ristretto.jpg</p>
+          </div>
+        </div>
+        <div class="p-4">
+          <h3 class="font-bold mb-1">Ristretto</h3>
+          <p class="text-stone-500 text-xs mb-2">Shot espresso singkat, lebih pekat &amp; intens.</p>
+          <span class="text-amber-600 font-bold text-sm">Rp 22.000</span>
+        </div>
+      </div>
+
+      <!-- 18. Vanilla Latte -->
+      <div class="bg-white rounded-2xl shadow overflow-hidden card">
+        <div class="relative w-full h-40">
+          <img src="gambar/menu-vanilla-latte.jpg" alt="Vanilla Latte" class="w-full h-40 object-cover"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="w-full h-40 bg-amber-50 border-2 border-dashed border-amber-300 flex-col items-center justify-center" style="display:none;">
+            <div class="text-2xl">&#128247;</div>
+            <p class="text-amber-600 text-xs font-bold mt-1">menu-vanilla-latte.jpg</p>
+          </div>
+        </div>
+        <div class="p-4">
+          <h3 class="font-bold mb-1">Vanilla Latte</h3>
+          <p class="text-stone-500 text-xs mb-2">Latte lembut beraroma vanila yang harum &amp; manis.</p>
+          <span class="text-amber-600 font-bold text-sm">Rp 32.000</span>
+        </div>
+      </div>
+
+      <!-- 19. Hazelnut Latte -->
+      <div class="bg-white rounded-2xl shadow overflow-hidden card">
+        <div class="relative w-full h-40">
+          <img src="gambar/menu-hazelnut-latte.jpg" alt="Hazelnut Latte" class="w-full h-40 object-cover"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="w-full h-40 bg-amber-50 border-2 border-dashed border-amber-300 flex-col items-center justify-center" style="display:none;">
+            <div class="text-2xl">&#128247;</div>
+            <p class="text-amber-600 text-xs font-bold mt-1">menu-hazelnut-latte.jpg</p>
+          </div>
+        </div>
+        <div class="p-4">
+          <h3 class="font-bold mb-1">Hazelnut Latte</h3>
+          <p class="text-stone-500 text-xs mb-2">Latte creamy berpadu sirup hazelnut yang kaya rasa.</p>
+          <span class="text-amber-600 font-bold text-sm">Rp 34.000</span>
+        </div>
+      </div>
+
+      <!-- 20. Single Origin Flores -->
+      <div class="bg-white rounded-2xl shadow overflow-hidden card">
+        <div class="relative w-full h-40">
+          <img src="gambar/menu-single-origin.jpg" alt="Single Origin Flores" class="w-full h-40 object-cover"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="w-full h-40 bg-amber-50 border-2 border-dashed border-amber-300 flex-col items-center justify-center" style="display:none;">
+            <div class="text-2xl">&#128247;</div>
+            <p class="text-amber-600 text-xs font-bold mt-1">menu-single-origin.jpg</p>
+          </div>
+        </div>
+        <div class="p-4">
+          <h3 class="font-bold mb-1">Single Origin Flores</h3>
+          <p class="text-stone-500 text-xs mb-2">Biji Arabika 100% Flores, fruity &amp; berkarakter.</p>
+          <span class="text-amber-600 font-bold text-sm">Rp 40.000</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-amber-950 text-stone-400 text-center py-5 text-sm">
+    &copy; 2025 Brewly Coffee &middot; Kelompok 1 &ndash; Informatika 4B
+  </footer>
+
+</body>
+</html>

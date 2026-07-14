@@ -1,0 +1,82 @@
+/* ============================================================
+   style.css — Brewly Coffee Shop
+   File CSS bersama yang dipakai oleh SEMUA halaman HTML
+   ============================================================ */
+
+/* --- NAVBAR --- */
+/* Styling untuk bar navigasi di atas setiap halaman */
+.nav-link:hover         { color: #fbbf24; }   /* amber-400 saat hover */
+.nav-link.active        { color: #fbbf24; font-weight: 600; }
+
+/* --- HEADER HALAMAN (judul tiap halaman selain Home) --- */
+.page-header {
+  background-color: #78350f; /* amber-900 */
+  color: white;
+  text-align: center;
+  padding: 3.5rem 1.5rem;
+}
+.page-header h1   { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+.page-header p    { color: #fde68a; font-size: 0.875rem; }  /* amber-200 */
+
+/* --- TOMBOL UTAMA --- */
+.btn-primary {
+  display: inline-block;
+  background-color: #f59e0b;    /* amber-500 */
+  color: #1c1917;               /* stone-900 */
+  font-weight: 700;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;        /* rounded-full */
+  text-decoration: none;
+  transition: background-color 0.2s, transform 0.2s;
+}
+.btn-primary:hover {
+  background-color: #d97706;    /* amber-600 */
+  transform: translateY(-2px);
+}
+
+/* --- KARTU PRODUK / BLOG (efek hover naik) --- */
+.card {
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* --- GALERI (efek hover gelap) --- */
+.gallery-img {
+  transition: opacity 0.25s, transform 0.25s;
+  cursor: pointer;
+}
+.gallery-img:hover {
+  opacity: 0.8;
+  transform: scale(1.03);
+}
+
+/* --- HERO (khusus halaman home.html) --- */
+/* Background gambar dengan overlay gelap agar teks terbaca */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1400&q=80');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 1.5rem;
+}
+
+/* --- FAQ ACCORDION (detail/summary native HTML) --- */
+details > summary { list-style: none; cursor: pointer; }
+details > summary::-webkit-details-marker { display: none; }
+
+/* --- FORM INPUT FOCUS --- */
+.form-input:focus {
+  outline: none;
+  border-color: #f59e0b;
+  box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.3);
+}

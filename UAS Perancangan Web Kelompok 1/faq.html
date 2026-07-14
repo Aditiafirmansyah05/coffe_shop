@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brewly Coffee - FAQ</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-stone-100 text-stone-800 font-sans">
+
+  <!-- NAVBAR -->
+  <nav class="bg-amber-950 text-amber-100 px-6 py-4">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <a href="home.html" class="text-2xl font-bold text-amber-400">&#9749; Brewly</a>
+      <ul class="hidden md:flex gap-6 text-sm">
+        <li><a href="home.html"    class="nav-link">Home</a></li>
+        <li><a href="tentang.html" class="nav-link">Tentang</a></li>
+        <li><a href="produk.html"  class="nav-link">Produk</a></li>
+        <li><a href="galeri.html"  class="nav-link">Galeri</a></li>
+        <li><a href="tim.html"     class="nav-link">Tim</a></li>
+        <li><a href="blog.html"    class="nav-link">Blog</a></li>
+        <li><a href="faq.html"     class="nav-link active">FAQ</a></li>
+        <li><a href="kontak.html"  class="nav-link">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HEADER HALAMAN -->
+  <div class="page-header">
+    <h1>FAQ</h1>
+    <p>Pertanyaan yang sering ditanyakan pelanggan kami</p>
+  </div>
+
+  <!-- DAFTAR FAQ -->
+  <!-- Menggunakan tag HTML bawaan <details> agar bisa buka/tutup tanpa JavaScript -->
+  <section class="max-w-3xl mx-auto py-16 px-6 space-y-4">
+
+    <details class="bg-white rounded-2xl shadow p-5 group">
+      <summary class="font-semibold cursor-pointer flex justify-between items-center list-none">
+        Jam berapa Brewly Coffee buka?
+        <span class="text-amber-500 font-bold text-xl group-open:hidden">+</span>
+        <span class="text-amber-500 font-bold text-xl hidden group-open:inline">&minus;</span>
+      </summary>
+      <p class="text-stone-500 text-sm mt-3 leading-relaxed">
+        Brewly buka setiap hari dari pukul <strong>07.00 &ndash; 22.00 WITA</strong>, termasuk hari libur nasional.
+      </p>
+    </details>
+
+    <details class="bg-white rounded-2xl shadow p-5 group">
+      <summary class="font-semibold cursor-pointer flex justify-between items-center list-none">
+        Apakah tersedia layanan delivery (pesan antar)?
+        <span class="text-amber-500 font-bold text-xl group-open:hidden">+</span>
+        <span class="text-amber-500 font-bold text-xl hidden group-open:inline">&minus;</span>
+      </summary>
+      <p class="text-stone-500 text-sm mt-3 leading-relaxed">
+        Ya! Kami tersedia di <strong>GrabFood</strong> dan <strong>GoFood</strong>
+        untuk pengiriman ke seluruh area Selong dan sekitarnya.
+      </p>
+    </details>
+
+    <details class="bg-white rounded-2xl shadow p-5 group">
+      <summary class="font-semibold cursor-pointer flex justify-between items-center list-none">
+        Apakah ada menu selain kopi?
+        <span class="text-amber-500 font-bold text-xl group-open:hidden">+</span>
+        <span class="text-amber-500 font-bold text-xl hidden group-open:inline">&minus;</span>
+      </summary>
+      <p class="text-stone-500 text-sm mt-3 leading-relaxed">
+        Tentu! Kami juga menyediakan teh herbal, cokelat panas, jus buah segar,
+        dan berbagai pilihan makanan ringan serta kue buatan tangan.
+      </p>
+    </details>
+
+    <details class="bg-white rounded-2xl shadow p-5 group">
+      <summary class="font-semibold cursor-pointer flex justify-between items-center list-none">
+        Bisakah memesan tempat untuk acara private?
+        <span class="text-amber-500 font-bold text-xl group-open:hidden">+</span>
+        <span class="text-amber-500 font-bold text-xl hidden group-open:inline">&minus;</span>
+      </summary>
+      <p class="text-stone-500 text-sm mt-3 leading-relaxed">
+        Bisa! Brewly menyediakan area private untuk berbagai acara seperti meeting, ulang tahun,
+        atau arisan. Hubungi kami via form di halaman <a href="kontak.html" class="text-amber-600 underline">Kontak</a>.
+      </p>
+    </details>
+
+    <details class="bg-white rounded-2xl shadow p-5 group">
+      <summary class="font-semibold cursor-pointer flex justify-between items-center list-none">
+        Apakah tersedia Wi-Fi gratis?
+        <span class="text-amber-500 font-bold text-xl group-open:hidden">+</span>
+        <span class="text-amber-500 font-bold text-xl hidden group-open:inline">&minus;</span>
+      </summary>
+      <p class="text-stone-500 text-sm mt-3 leading-relaxed">
+        Tentu! Semua area Brewly dilengkapi Wi-Fi kecepatan tinggi secara gratis.
+        Password tersedia di meja kasir setelah melakukan pemesanan.
+      </p>
+    </details>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-amber-950 text-stone-400 text-center py-5 text-sm">
+    &copy; 2025 Brewly Coffee &middot; Kelompok 1 &ndash; Informatika 4B
+  </footer>
+
+</body>
+</html>
